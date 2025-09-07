@@ -835,7 +835,7 @@ section,
 }
 
 .hero .hero-content .hero-stats .stat-item {
-  text-align: left;
+  text-align: center;
 }
 
 .hero .hero-content .hero-stats .stat-item .stat-number {
