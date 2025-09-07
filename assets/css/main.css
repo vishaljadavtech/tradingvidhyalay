@@ -173,7 +173,6 @@ h6 {
 
   .header .btn-getstarted {
     order: 2;
-    margin: 0 15px 0 0;
     padding: 6px 20px;
   }
 
@@ -181,6 +180,10 @@ h6 {
     order: 3;
   }
 }
+
+
+
+
 
 .scrolled .header {
   box-shadow: 0px 0 18px rgba(0, 0, 0, 0.1);
