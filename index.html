@@ -4,11 +4,11 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Trading Vidhyalay - Learn Trading with Personal Guidance</title>
+  <title>Trading Vidhyalay - Educational Courses on Stock Market</title>
   <meta name="description"
-    content="Trading Vidhyalay, founded by a passionate trader, offers personalized trading courses to help you master the stock market with practical strategies.">
+    content="Trading Vidhyalay offers educational courses on stock market concepts, designed to help beginners and intermediates understand trading principles.">
   <meta name="keywords"
-    content="trading courses, learn trading, stock market training, Trading Vidhyalay, options trading, beginner trading, trading mentorship">
+    content="stock market education, learn trading, trading courses, Trading Vidhyalay, financial education, beginner trading, trading knowledge">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -33,45 +33,69 @@
 
 <body class="index-page">
 
-  <header id="header" class="header d-flex align-items-center fixed-top">
+  <!-- Disclaimer Banner -->
+  <!-- Disclaimer Banner (Fixed Top) -->
+  <!-- Disclaimer Banner -->
+  <div id="disclaimer" class="disclaimer-banner bg-warning text-dark text-center py-2 fixed-top">
+    <p class="mb-0">
+      <strong>Disclaimer :</strong> Trading Vidhyalay provides educational content only.
+      We are not SEBI-registered investment advisors or research analysts.
+      We do not provide stock tips, buy/sell/hold recommendations, or personalized investment advice.
+      Always consult a SEBI-registered advisor before making investment decisions.
+    </p>
+  </div>
+
+  <!-- Header (Shifted Below Disclaimer) -->
+  <header id="header" class="header d-flex align-items-center fixed-top" style="top: 50px;">
     <div class="container position-relative d-flex align-items-center justify-content-between">
-
       <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-        <img src="assets/img/logo.png" alt="Trading Vidhyalay Logo">
+        <img src="assets/img/logow.png" alt="Trading Vidhyalay Logo">
       </a>
-
       <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="#hero" class="active">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#courses">Courses</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#pricing">Pricing</a></li>
-          <li class="dropdown"><a href="#"><span>Resources</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Trading Tips</a></li>
-              <li class="dropdown"><a href="#"><span>Free Guides</span> <i
-                    class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Stock Market Basics</a></li>
-                  <li><a href="#">Options Trading 101</a></li>
-                  <li><a href="#">Chart Reading Guide</a></li>
-                  <li><a href="#">Risk Management Tips</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">FAQs</a></li>
-            </ul>
-          </li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="#hero" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li class="dropdown"><a href="#"><span>Resources</span> <i
+                  class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                <li><a href="#">Trading Education</a></li>
+                <li class="dropdown"><a href="#"><span>Free Guides</span> <i
+                      class="bi bi-chevron-down toggle-dropdown"></i></a>
+                  <ul>
+                    <li><a href="#">Stock Market Basics</a></li>
+                    <li><a href="#">Options Trading 101</a></li>
+                    <li><a href="#">Chart Reading Guide</a></li>
+                    <li><a href="#">Risk Management</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#faq">FAQs</a></li>
+              </ul>
+            </li>
+            <li><a href="#contact">Contact</a></li>
+          </ul> <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
       </nav>
-
-      <a class="btn-getstarted" href="index.html#about">Start Learning</a>
-
+      <a class="btn-getstarted" href="#courses">Explore Courses</a>
     </div>
   </header>
+
+  <script>
+    const disclaimer = document.getElementById('disclaimer');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) { // hide after 50px scroll
+        disclaimer.style.display = 'none';
+        document.getElementById('header').style.top = '0'; // move header to top
+      } else {
+        disclaimer.style.display = 'block';
+        document.getElementById('header').style.top = '50px';
+      }
+    });
+  </script>
 
   <main class="main">
 
@@ -84,30 +108,20 @@
 
           <div class="col-lg-6 order-2 order-lg-1" data-aos="fade-right" data-aos-delay="200">
             <div class="hero-content">
-              <h1 class="hero-title">Learn Trading with Trading Vidhyalay</h1>
-              <p class="hero-description">Hi, I’m the founder of Trading Vidhyalay. My courses offer simple, practical
-                guidance to help you succeed in the stock market.</p>
+              <h1 class="hero-title">Master The Market With Trading Vidhyalay</h1>
+              <p class="hero-description">Trading Vidhyalay offers educational courses to help you understand stock
+                market concepts and trading principles in a simple, structured way.</p>
               <div class="hero-actions">
                 <a href="#courses" class="btn-primary">Explore Courses</a>
                 <a href="#" class="btn-secondary glightbox">
                   <i class="bi bi-play-circle"></i>
-                  <span>Watch My Story</span>
+                  <span>Watch Introduction</span>
                 </a>
               </div>
-              <div class="hero-stats">
-                <div class="stat-item">
-                  <span class="stat-number">20+</span>
-                  <span class="stat-label">Students Trained</span>
-                </div>
-                <div class="stat-item">
-                  <span class="stat-number">90%</span>
-                  <span class="stat-label">Satisfaction Rate</span>
-                </div>
-                <div class="stat-item">
-                  <span class="stat-number">2+</span>
-                  <span class="stat-label">Years Experience</span>
-                </div>
-              </div>
+
+              <p style="font-weight: bold; font-size:18px" class="disclaimer small mt-3">Note : This is an educational
+                platform only. We do not provide investment
+                advice or stock recommendations.</p>
             </div>
           </div>
 
@@ -115,19 +129,19 @@
             <div class="hero-visual">
               <div class="hero-image-wrapper">
                 <img src="assets/img/illustration/heroimage.jpg" class="img-fluid hero-image"
-                  alt="Trading Vidhyalay Trading Illustration">
+                  alt="Stock Market Education Illustration">
                 <div class="floating-elements">
                   <div class="floating-card card-1">
+                    <i class="bi bi-book"></i>
+                    <span>Education</span>
+                  </div>
+                  <div class="floating-card card-2">
                     <i class="bi bi-lightbulb"></i>
                     <span>Knowledge</span>
                   </div>
-                  <div class="floating-card card-2">
-                    <i class="bi bi-award"></i>
-                    <span>Expertise</span>
-                  </div>
                   <div class="floating-card card-3">
-                    <i class="bi bi-people"></i>
-                    <span>Support</span>
+                    <i class="bi bi-journal-text"></i>
+                    <span>Resources</span>
                   </div>
                 </div>
               </div>
@@ -151,47 +165,49 @@
             <div class="content-wrapper">
               <div class="section-header">
                 <span class="section-badge">ABOUT TRADING VIDHYALAY</span>
-                <h2>My Mission to Empower Traders</h2>
+                <h2>Our Mission to Educate</h2>
               </div>
 
-              <p class="lead-text">I’m a passionate trader who founded Trading Vidhyalay to share practical trading
-                knowledge with beginners and aspiring traders.</p>
+              <p class="lead-text">Trading Vidhyalay is dedicated to providing educational resources to help beginners
+                and intermediates understand stock market concepts.</p>
 
-              <p class="description-text">With over 5 years of trading experience, I’ve designed courses that break down
-                complex market concepts into simple, actionable steps to help you succeed.</p>
+              <p class="description-text">Our courses focus on teaching foundational trading principles, market
+                mechanics, and risk management concepts through clear, structured lessons.</p>
 
               <div class="stats-grid">
                 <div class="stat-item">
-                  <div class="stat-number">20+</div>
-                  <div class="stat-label">Students Trained</div>
+                  <div class="stat-number">50+</div>
+                  <div class="stat-label">Students Enrolled</div>
                 </div>
                 <div class="stat-item">
                   <div class="stat-number">90%</div>
-                  <div class="stat-label">Satisfaction Rate</div>
+                  <div class="stat-label">Course Completion Rate</div>
                 </div>
                 <div class="stat-item">
-                  <div class="stat-number">2+</div>
-                  <div class="stat-label">Years Experience</div>
+                  <div class="stat-number">5+</div>
+                  <div class="stat-label">Teaching Experience</div>
                 </div>
                 <div class="stat-item">
                   <div class="stat-number">24/7</div>
-                  <div class="stat-label">Support</div>
+                  <div class="stat-label">Support Availability</div>
                 </div>
               </div>
+              <p class="disclaimer" style="font-weight: bold; font-size:16px">Disclaimer : We are not SEBI-registered
+                and do not provide investment advice or
+                stock recommendations. Consult a qualified financial advisor for investment decisions.</p>
             </div>
           </div>
 
           <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
             <div class="visual-section">
               <div class="main-image-container">
-                <img src="assets/img/about/about-8.webp" alt="Trading Vidhyalay mentorship"
-                  class="img-fluid main-visual">
+                <img src="assets/img/about/about-8.webp" alt="Stock Market Education" class="img-fluid main-visual">
                 <div class="overlay-card">
                   <div class="card-content">
-                    <h4>Personal Guidance</h4>
-                    <p>I’m here to guide you with practical strategies that work in real markets.</p>
+                    <h4>Educational Focus</h4>
+                    <p>Learn trading concepts with clear, practical lessons designed for beginners.</p>
                     <div class="card-icon">
-                      <i class="bi bi-award-fill"></i>
+                      <i class="bi bi-book-fill"></i>
                     </div>
                   </div>
                 </div>
@@ -222,8 +238,8 @@
                     <div class="feature-icon">
                       <i class="bi bi-shield-check"></i>
                     </div>
-                    <h5>One-on-One Support</h5>
-                    <p>I personally guide you to ensure you understand every concept clearly.</p>
+                    <h5>Educational Support</h5>
+                    <p>Access guidance to understand trading concepts clearly through our support channels.</p>
                   </div>
                 </div>
                 <div class="col-md-4">
@@ -232,7 +248,7 @@
                       <i class="bi bi-lightning-charge"></i>
                     </div>
                     <h5>Simple Learning</h5>
-                    <p>Learn trading through easy-to-follow lessons based on real-world experience.</p>
+                    <p>Learn trading principles through easy-to-follow educational lessons.</p>
                   </div>
                 </div>
                 <div class="col-md-4">
@@ -240,8 +256,8 @@
                     <div class="feature-icon">
                       <i class="bi bi-headset"></i>
                     </div>
-                    <h5>Always Available</h5>
-                    <p>Reach out anytime for help with your trading questions.</p>
+                    <h5>Support Availability</h5>
+                    <p>Reach out for help with course-related questions anytime.</p>
                   </div>
                 </div>
               </div>
@@ -258,9 +274,9 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <span class="description-title">My Courses</span>
-        <h2>Trading Courses</h2>
-        <p>Learn trading through my carefully crafted courses designed for beginners and intermediates.</p>
+        <span class="description-title">Our Courses</span>
+        <h2>Educational Courses</h2>
+        <p>Explore our structured courses designed to teach stock market concepts and trading principles.</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -274,8 +290,8 @@
                   <i class="bi bi-rocket-takeoff"></i>
                 </div>
                 <div class="tab-content">
-                  <h5>Beginner Trading</h5>
-                  <span>Kickstart your journey</span>
+                  <h5>Trading Workshop</h5>
+                  <span>Learn market basics</span>
                 </div>
               </a>
             </li><!-- End tab nav item -->
@@ -283,11 +299,11 @@
             <li class="nav-item">
               <a class="nav-link" data-bs-toggle="tab" data-bs-target="#courses-tab-2">
                 <div class="tab-icon">
-                  <i class="bi bi-shield-shaded"></i>
+                  <i class="bi bi-lightning-charge"></i>
                 </div>
                 <div class="tab-content">
-                  <h5>Options Trading</h5>
-                  <span>Learn advanced strategies</span>
+                  <h5>Technical Analysis</h5>
+                  <span>Learn chart analysis</span>
                 </div>
               </a>
             </li><!-- End tab nav item -->
@@ -295,11 +311,11 @@
             <li class="nav-item">
               <a class="nav-link" data-bs-toggle="tab" data-bs-target="#courses-tab-3">
                 <div class="tab-icon">
-                  <i class="bi bi-lightning-charge"></i>
+                  <i class="bi bi-shield-shaded"></i>
                 </div>
                 <div class="tab-content">
-                  <h5>Technical Analysis</h5>
-                  <span>Read market trends</span>
+                  <h5>Financial Modeling</h5>
+                  <span>Understand valuation </span>
                 </div>
               </a>
             </li><!-- End tab nav item -->
@@ -310,8 +326,8 @@
                   <i class="bi bi-heart-pulse"></i>
                 </div>
                 <div class="tab-content">
-                  <h5>Risk Management</h5>
-                  <span>Safeguard your trades</span>
+                  <h5>Crypto Courses</h5>
+                  <span>Learn crypto trading</span>
                 </div>
               </a>
             </li><!-- End tab nav item -->
@@ -320,50 +336,26 @@
 
           <div class="tab-content" data-aos="fade-up" data-aos-delay="200">
 
+            <!-- Trading Workshop -->
             <div class="tab-pane fade active show" id="courses-tab-1">
               <div class="row align-items-center">
-
                 <div class="col-lg-5">
                   <div class="content-wrapper">
                     <div class="icon-badge">
                       <i class="bi bi-rocket-takeoff"></i>
                     </div>
-                    <h3>Beginner Trading Course</h3>
-                    <p>Start your trading journey with simple lessons I’ve designed to make the stock market easy to
-                      understand.</p>
+                    <h3>Trading Workshop</h3>
+                    <p>Master trading through focused workshops.</p>
 
                     <div class="feature-grid">
-                      <div class="feature-item">
-                        <i class="bi bi-check-circle-fill"></i>
-                        <span>Learn market basics</span>
+                      <div class="feature-item"><i class="bi bi-check-circle-fill"></i><span>Technical Analysis
+                          Workshop</span></div>
+                      <div class="feature-item"><i class="bi bi-check-circle-fill"></i><span>Option Strategy
+                          Workshop</span></div>
+                      <div class="feature-item"><i class="bi bi-check-circle-fill"></i><span>SMC & VCP Workshop</span>
                       </div>
-                      <div class="feature-item">
-                        <i class="bi bi-check-circle-fill"></i>
-                        <span>Understand stock trading</span>
-                      </div>
-                      <div class="feature-item">
-                        <i class="bi bi-check-circle-fill"></i>
-                        <span>Use trading platforms</span>
-                      </div>
-                      <div class="feature-item">
-                        <i class="bi bi-check-circle-fill"></i>
-                        <span>Build a starter portfolio</span>
-                      </div>
-                    </div>
-
-                    <div class="stats-row">
-                      <div class="stat-item">
-                        <div class="stat-number">6+</div>
-                        <div class="stat-label">Modules</div>
-                      </div>
-                      <div class="stat-item">
-                        <div class="stat-number">10+</div>
-                        <div class="stat-label">Students</div>
-                      </div>
-                      <div class="stat-item">
-                        <div class="stat-number">4.5/5</div>
-                        <div class="stat-label">Rating</div>
-                      </div>
+                      <div class="feature-item"><i class="bi bi-check-circle-fill"></i><span>Fundamental Analysis
+                          Workshop</span></div>
                     </div>
 
                     <a href="#pricing" class="btn-primary">Enroll Now <i class="bi bi-arrow-right"></i></a>
@@ -373,133 +365,35 @@
                 <div class="col-lg-7">
                   <div class="visual-content">
                     <div class="main-image">
-                      <img src="assets/img/features/features-1.png" alt="Beginner trading course overview"
-                        class="img-fluid">
+                      <img src="assets/img/features/features-1.jpeg" alt="Trading Workshop" class="img-fluid">
                       <div class="floating-card">
-                        <i class="bi bi-graph-up-arrow"></i>
-                        <div class="card-content">
-                          <span>Success</span>
-                          <strong>90% Satisfaction</strong>
-                        </div>
+                        <i class="bi bi-book"></i>
+                        <div class="card-content"><span>Education</span><strong>Workshops</strong></div>
                       </div>
                     </div>
                   </div>
                 </div>
-
               </div>
             </div><!-- End tab content item -->
 
+            <!-- Technical Analysis -->
             <div class="tab-pane fade" id="courses-tab-2">
               <div class="row align-items-center">
-
-                <div class="col-lg-5">
-                  <div class="content-wrapper">
-                    <div class="icon-badge">
-                      <i class="bi bi-shield-shaded"></i>
-                    </div>
-                    <h3>Options Trading Course</h3>
-                    <p>Learn options trading with practical strategies I’ve used to navigate the markets successfully.
-                    </p>
-
-                    <div class="feature-grid">
-                      <div class="feature-item">
-                        <i class="bi bi-check-circle-fill"></i>
-                        <span>Understand options basics</span>
-                      </div>
-                      <div class="feature-item">
-                        <i class="bi bi-check-circle-fill"></i>
-                        <span>Learn calls and puts</span>
-                      </div>
-                      <div class="feature-item">
-                        <i class="bi bi-check-circle-fill"></i>
-                        <span>Apply simple strategies</span>
-                      </div>
-                      <div class="feature-item">
-                        <i class="bi bi-check-circle-fill"></i>
-                        <span>Practice with examples</span>
-                      </div>
-                    </div>
-
-                    <div class="stats-row">
-                      <div class="stat-item">
-                        <div class="stat-number">8+</div>
-                        <div class="stat-label">Modules</div>
-                      </div>
-                      <div class="stat-item">
-                        <div class="stat-number">10+</div>
-                        <div class="stat-label">Students</div>
-                      </div>
-                      <div class="stat-item">
-                        <div class="stat-number">4.6/5</div>
-                        <div class="stat-label">Rating</div>
-                      </div>
-                    </div>
-
-                    <a href="#pricing" class="btn-primary">Enroll Now <i class="bi bi-arrow-right"></i></a>
-                  </div>
-                </div>
-
-                <div class="col-lg-7">
-                  <div class="visual-content">
-                    <div class="main-image">
-                      <img src="assets/img/features/features-2.png" alt="Options trading course visuals"
-                        class="img-fluid">
-                      <div class="floating-card">
-                        <i class="bi bi-shield-check"></i>
-                        <div class="card-content">
-                          <span>Expertise</span>
-                          <strong>Proven Strategies</strong>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-            </div><!-- End tab content item -->
-
-            <div class="tab-pane fade" id="courses-tab-3">
-              <div class="row align-items-center">
-
                 <div class="col-lg-5">
                   <div class="content-wrapper">
                     <div class="icon-badge">
                       <i class="bi bi-lightning-charge"></i>
                     </div>
-                    <h3>Technical Analysis Course</h3>
-                    <p>Master chart reading and market trends with techniques I use to make informed trades.</p>
+                    <h3>Technical Analysis</h3>
+                    <p>Dive deep into advanced market analysis techniques.</p>
 
                     <div class="feature-grid">
-                      <div class="feature-item">
-                        <i class="bi bi-check-circle-fill"></i>
-                        <span>Learn chart patterns</span>
+                      <div class="feature-item"><i class="bi bi-check-circle-fill"></i><span>Smart Money Concept</span>
                       </div>
-                      <div class="feature-item">
-                        <i class="bi bi-check-circle-fill"></i>
-                        <span>Understand indicators</span>
-                      </div>
-                      <div class="feature-item">
-                        <i class="bi bi-check-circle-fill"></i>
-                        <span>Analyze trends</span>
-                      </div>
-                      <div class="feature-item">
-                        <i class="bi bi-check-circle-fill"></i>
-                        <span>Apply real-time tactics</span>
-                      </div>
-                    </div>
-
-                    <div class="stats-row">
-                      <div class="stat-item">
-                        <div class="stat-number">2+</div>
-                        <div class="stat-label">Modules</div>
-                      </div>
-                      <div class="stat-item">
-                        <div class="stat-number">10+</div>
-                        <div class="stat-label">Students</div>
-                      </div>
-                      <div class="stat-item">
-                        <div class="stat-number">4.7/5</div>
-                        <div class="stat-label">Rating</div>
+                      <div class="feature-item"><i class="bi bi-check-circle-fill"></i><span>ICT Concept</span></div>
+                      <div class="feature-item"><i class="bi bi-check-circle-fill"></i><span>Orderflow & Market
+                          Profile</span></div>
+                      <div class="feature-item"><i class="bi bi-check-circle-fill"></i><span>VCP and more...</span>
                       </div>
                     </div>
 
@@ -510,64 +404,74 @@
                 <div class="col-lg-7">
                   <div class="visual-content">
                     <div class="main-image">
-                      <img src="assets/img/features/features-3.png" alt="Technical analysis course visuals"
-                        class="img-fluid">
+                      <img src="assets/img/features/features-3.png" alt="Technical Analysis" class="img-fluid">
                       <div class="floating-card">
-                        <i class="bi bi-speedometer2"></i>
-                        <div class="card-content">
-                          <span>Accuracy</span>
-                          <strong>Trend Analysis</strong>
-                        </div>
+                        <i class="bi bi-book"></i>
+                        <div class="card-content"><span>Education</span><strong>Market Analysis</strong></div>
                       </div>
                     </div>
                   </div>
                 </div>
-
               </div>
             </div><!-- End tab content item -->
 
+            <!-- Financial Modelling -->
+            <div class="tab-pane fade" id="courses-tab-3">
+              <div class="row align-items-center">
+                <div class="col-lg-5">
+                  <div class="content-wrapper">
+                    <div class="icon-badge">
+                      <i class="bi bi-shield-shaded"></i>
+                    </div>
+                    <h3>Financial Modelling Course</h3>
+                    <p>Learn financial modelling and equity research skills.</p>
+
+                    <div class="feature-grid">
+                      <div class="feature-item"><i class="bi bi-check-circle-fill"></i><span>Equity Research
+                          Cohort</span></div>
+                      <div class="feature-item"><i class="bi bi-check-circle-fill"></i><span>Advanced Valuation &
+                          Modelling</span></div>
+                      <div class="feature-item"><i class="bi bi-check-circle-fill"></i><span>Excel & Google Sheets
+                          Courses</span></div>
+                      <div class="feature-item"><i class="bi bi-check-circle-fill"></i><span>Buy Side & Sell Side
+                          Analysis</span></div>
+                    </div>
+
+                    <a href="#pricing" class="btn-primary">Enroll Now <i class="bi bi-arrow-right"></i></a>
+                  </div>
+                </div>
+
+                <div class="col-lg-7">
+                  <div class="visual-content">
+                    <div class="main-image">
+                      <img src="assets/img/features/feature-2.webp" alt="Financial Modelling" class="img-fluid">
+                      <div class="floating-card">
+                        <i class="bi bi-book"></i>
+                        <div class="card-content"><span>Education</span><strong>Valuation</strong></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End tab content item -->
+
+            <!-- Crypto -->
             <div class="tab-pane fade" id="courses-tab-4">
               <div class="row align-items-center">
-
                 <div class="col-lg-5">
                   <div class="content-wrapper">
                     <div class="icon-badge">
                       <i class="bi bi-heart-pulse"></i>
                     </div>
-                    <h3>Risk Management Course</h3>
-                    <p>Learn how to protect your capital with practical risk management strategies I swear by.</p>
+                    <h3>Crypto Market Courses</h3>
+                    <p>Understand the world of cryptocurrency trading.</p>
 
                     <div class="feature-grid">
-                      <div class="feature-item">
-                        <i class="bi bi-check-circle-fill"></i>
-                        <span>Master position sizing</span>
-                      </div>
-                      <div class="feature-item">
-                        <i class="bi bi-check-circle-fill"></i>
-                        <span>Use stop-loss effectively</span>
-                      </div>
-                      <div class="feature-item">
-                        <i class="bi bi-check-circle-fill"></i>
-                        <span>Manage trade risks</span>
-                      </div>
-                      <div class="feature-item">
-                        <i class="bi bi-check-circle-fill"></i>
-                        <span>Build discipline</span>
-                      </div>
-                    </div>
-
-                    <div class="stats-row">
-                      <div class="stat-item">
-                        <div class="stat-number">4+</div>
-                        <div class="stat-label">Modules</div>
-                      </div>
-                      <div class="stat-item">
-                        <div class="stat-number">10+</div>
-                        <div class="stat-label">Students</div>
-                      </div>
-                      <div class="stat-item">
-                        <div class="stat-number">4.8/5</div>
-                        <div class="stat-label">Rating</div>
+                      <div class="feature-item"><i class="bi bi-check-circle-fill"></i><span>Crypto Trading
+                          Strategy</span></div>
+                      <div class="feature-item"><i class="bi bi-check-circle-fill"></i><span>Crypto Market Technical
+                          Analysis</span></div>
+                      <div class="feature-item"><i class="bi bi-check-circle-fill"></i><span>Trading Workshop</span>
                       </div>
                     </div>
 
@@ -578,28 +482,77 @@
                 <div class="col-lg-7">
                   <div class="visual-content">
                     <div class="main-image">
-                      <img src="assets/img/features/features-4.png" alt="Risk management course visuals"
-                        class="img-fluid">
+                      <img src="assets/img/features/features-4.png" alt="Crypto Courses" class="img-fluid">
                       <div class="floating-card">
-                        <i class="bi bi-headset"></i>
-                        <div class="card-content">
-                          <span>Safety</span>
-                          <strong>Protect Capital</strong>
-                        </div>
+                        <i class="bi bi-book"></i>
+                        <div class="card-content"><span>Education</span><strong>Crypto Trading</strong></div>
                       </div>
                     </div>
                   </div>
                 </div>
-
               </div>
             </div><!-- End tab content item -->
 
           </div>
         </div>
+      </div>
+    </section><!-- /Courses Section -->
 
+    <section id="features-2" class="features-2 section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Journey of a Student at Trading Vidhyalay</h2>
+        <p>How Does it Works</p>
       </div>
 
-    </section><!-- /Courses Section -->
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row g-4">
+
+          <!-- Step 1 -->
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="150">
+            <div class="step-card">
+              <div class="step-badge">STEP 1</div>
+              <img src="assets/img/steps/step1.jpg" alt="Make a Decision" class="step-img img-fluid" loading="lazy">
+              <h3>Make a Decision</h3>
+              <p>It’s time to become financially independent.</p>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="step-card">
+              <div class="step-badge">STEP 2</div>
+              <img src="assets/img/steps/step2.jpg" alt="Subscribe" class="step-img img-fluid" loading="lazy">
+              <h3>Subscribe</h3>
+              <p>Get in-depth knowledge of the stock market by subscribing to our Trading in the Zone and GTF Options
+                Courses.</p>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="250">
+            <div class="step-card">
+              <div class="step-badge">STEP 3</div>
+              <img src="assets/img/steps/step3.jpg" alt="Scheduling Process" class="step-img img-fluid" loading="lazy">
+              <h3>Scheduling Process</h3>
+              <p>Join our live classes through Zoom, go through recordings, and get full Mentor support.</p>
+            </div>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="step-card">
+              <div class="step-badge">STEP 4</div>
+              <img src="assets/img/steps/step4.jpg" alt="Transformation Completed" class="step-img img-fluid"
+                loading="lazy">
+              <h3>Transformation Completed</h3>
+              <p>Novice to Professional Trader – your journey starts here.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
 
     <!-- Features Cards Section -->
     <section id="features-cards" class="features-cards section">
@@ -613,11 +566,11 @@
               <div class="icon-box">
                 <i class="bi bi-shield-lock"></i>
               </div>
-              <h3>Live Q&A Sessions</h3>
-              <p>Join me for live sessions where I answer your trading questions in real-time.</p>
+              <h3>Educational Webinars</h3>
+              <p>Join live sessions to learn about trading concepts and ask questions.</p>
               <ul class="feature-list">
-                <li><i class="bi bi-check-circle"></i> Real-time guidance</li>
-                <li><i class="bi bi-check-circle"></i> Market insights</li>
+                <li><i class="bi bi-check-circle"></i> Concept explanations</li>
+                <li><i class="bi bi-check-circle"></i> Q&A sessions</li>
               </ul>
               <a href="#" class="read-more">Join Now <i class="bi bi-arrow-right"></i></a>
             </div>
@@ -628,11 +581,11 @@
               <div class="icon-box">
                 <i class="bi bi-shield"></i>
               </div>
-              <h3>Personal Mentorship</h3>
-              <p>Get one-on-one guidance from me to tailor your trading journey to your goals.</p>
+              <h3>Educational Mentorship</h3>
+              <p>Get guidance to understand trading concepts tailored to your learning needs.</p>
               <ul class="feature-list">
-                <li><i class="bi bi-check-circle"></i> Customized strategies</li>
-                <li><i class="bi bi-check-circle"></i> Direct support</li>
+                <li><i class="bi bi-check-circle"></i> Concept clarification</li>
+                <li><i class="bi bi-check-circle"></i> Learning support</li>
               </ul>
               <a href="#" class="read-more">Learn More <i class="bi bi-arrow-right"></i></a>
             </div>
@@ -648,7 +601,7 @@
 
           <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="compliance-card">
-              <h4>Market Updates</h4>
+              <h4>Educational Updates</h4>
               <p class="status compliant">Available</p>
             </div>
           </div>
@@ -684,14 +637,14 @@
                 <i class="bi bi-app-indicator"></i>
               </div>
               <h3>Easy-to-Follow Lessons</h3>
-              <p>My courses are designed to be simple and practical, perfect for beginners.</p>
+              <p>Our courses are designed to teach trading concepts in a simple, beginner-friendly way.</p>
               <ul class="feature-benefits">
                 <li><i class="bi bi-check-circle-fill"></i> Video tutorials</li>
                 <li><i class="bi bi-check-circle-fill"></i> Simple examples</li>
                 <li><i class="bi bi-check-circle-fill"></i> Step-by-step guides</li>
               </ul>
               <div class="feature-image">
-                <img src="assets/img/features/features-1.png" alt="Trading Vidhyalay online lessons" class="img-fluid"
+                <img src="assets/img/features/1.jpg" alt="Trading Vidhyalay online lessons" class="img-fluid"
                   loading="lazy">
               </div>
             </div>
@@ -702,16 +655,15 @@
               <div class="feature-icon">
                 <i class="bi bi-graph-up-arrow"></i>
               </div>
-              <h3>Real-World Strategies</h3>
-              <p>Learn the exact strategies I use to trade successfully in the stock market.</p>
+              <h3>Educational Strategies</h3>
+              <p>Learn general trading strategies and concepts used in the stock market.</p>
               <ul class="feature-benefits">
-                <li><i class="bi bi-check-circle-fill"></i> Proven techniques</li>
+                <li><i class="bi bi-check-circle-fill"></i> Market concepts</li>
                 <li><i class="bi bi-check-circle-fill"></i> Practical examples</li>
-                <li><i class="bi bi-check-circle-fill"></i> Real-time insights</li>
+                <li><i class="bi bi-check-circle-fill"></i> Learning insights</li>
               </ul>
               <div class="feature-image">
-                <img src="assets/img/features/features-2.png" alt="Trading strategies visuals" class="img-fluid"
-                  loading="lazy">
+                <img src="assets/img/features/2.jpeg" alt="Trading strategies visuals" class="img-fluid" loading="lazy">
               </div>
             </div>
           </div>
@@ -721,22 +673,19 @@
               <div class="feature-icon">
                 <i class="bi bi-shield-check"></i>
               </div>
-              <h3>Personal Support</h3>
-              <p>I’m here to answer your questions and guide you every step of the way.</p>
+              <h3>Educational Support</h3>
+              <p>We’re here to answer your questions about course content and guide your learning.</p>
               <ul class="feature-benefits">
-                <li><i class="bi bi-check-circle-fill"></i> Direct access to me</li>
-                <li><i class="bi bi-check-circle-fill"></i> Tailored advice</li>
+                <li><i class="bi bi-check-circle-fill"></i> Course support</li>
+                <li><i class="bi bi-check-circle-fill"></i> Concept clarification</li>
                 <li><i class="bi bi-check-circle-fill"></i> Quick responses</li>
               </ul>
               <div class="feature-image">
-                <img src="assets/img/features/features-3.png" alt="Personal trading support" class="img-fluid"
-                  loading="lazy">
+                <img src="assets/img/features/3.jpg" alt="Educational support" class="img-fluid" loading="lazy">
               </div>
             </div>
           </div>
         </div>
-
-
 
       </div>
 
@@ -751,38 +700,41 @@
           <div class="col-lg-5 order-lg-2" data-aos="fade-left" data-aos-delay="200">
             <div class="image-wrapper position-relative">
               <div class="floating-card">
-                <i class="bi bi-shield-lock"></i>
-                <h4>Build Your Trading Skills</h4>
-                <p>Learn practical strategies to trade confidently and achieve your financial goals.</p>
+                <i class="bi bi-book"></i>
+                <h4>Build Your Knowledge</h4>
+                <p>Learn stock market concepts to enhance your understanding of trading.</p>
               </div>
-              <img src="assets/img/misc/misc-6.webp" alt="Trading Vidhyalay financial success"
-                class="img-fluid main-image">
+              <img src="assets/img/misc/misc-6.webp" alt="Stock market education" class="img-fluid main-image">
             </div>
           </div>
 
           <div class="col-lg-6 offset-lg-1 order-lg-1" data-aos="fade-right" data-aos-delay="100">
             <div class="content-area">
-              <h2>Start Trading with Confidence</h2>
-              <p>I’m here to guide you through every step of your trading journey with simple, effective courses.</p>
+              <h2>Start Learning About Trading</h2>
+              <p>Our educational courses provide clear, structured lessons to help you understand stock market
+                principles.</p>
 
               <ul class="feature-list">
                 <li>
                   <i class="bi bi-check"></i>
-                  <span>Learn from my experience</span>
+                  <span>Learn market concepts</span>
                 </li>
                 <li>
                   <i class="bi bi-check"></i>
-                  <span>Access practical strategies</span>
+                  <span>Understand strategies</span>
                 </li>
                 <li>
                   <i class="bi bi-check"></i>
-                  <span>Get personal support</span>
+                  <span>Access educational support</span>
                 </li>
               </ul>
 
               <div class="cta-wrapper">
                 <a href="#courses" class="btn btn-cta">Start Now</a>
               </div>
+              <p class="disclaimer mt-3" style="font-weight: bold; font-size:18px">Note : This is an educational
+                platform only. We do not provide investment
+                advice or stock recommendations.</p>
             </div>
           </div>
 
@@ -799,7 +751,7 @@
       <div class="container section-title" data-aos="fade-up">
         <span class="description-title">Testimonials</span>
         <h2>Student Feedback</h2>
-        <p>Hear from my students who are learning to trade with Trading Vidhyalay.</p>
+        <p>Hear from students who have learned stock market concepts with Trading Vidhyalay.</p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -811,11 +763,11 @@
               <div class="quote-pattern">
                 <i class="bi bi-quote"></i>
               </div>
-              <p>The beginner course was easy to follow, and the personal support was amazing!</p>
+              <p>The beginner course was clear and helped me understand stock market basics!</p>
               <div class="client-info">
                 <div class="client-details">
                   <h3>Anjali Patel</h3>
-                  <span class="position">Beginner Trader</span>
+                  <span class="position">Beginner Learner</span>
                 </div>
               </div>
             </div>
@@ -826,11 +778,11 @@
               <div class="quote-pattern">
                 <i class="bi bi-quote"></i>
               </div>
-              <p>Options trading seemed complex, but the course broke it down so well. I’m seeing results!</p>
+              <p>The options trading course explained complex concepts in a simple way.</p>
               <div class="client-info">
                 <div class="client-details">
                   <h3>Vikram Singh</h3>
-                  <span class="position">Options Trader</span>
+                  <span class="position">Options Learner</span>
                 </div>
               </div>
             </div>
@@ -841,11 +793,11 @@
               <div class="quote-pattern">
                 <i class="bi bi-quote"></i>
               </div>
-              <p>The personal guidance helped me avoid costly mistakes in trading.</p>
+              <p>The course support helped me clarify trading concepts effectively.</p>
               <div class="client-info">
                 <div class="client-details">
                   <h3>Pooja Sharma</h3>
-                  <span class="position">Aspiring Trader</span>
+                  <span class="position">Aspiring Learner</span>
                 </div>
               </div>
             </div>
@@ -856,11 +808,11 @@
               <div class="quote-pattern">
                 <i class="bi bi-quote"></i>
               </div>
-              <p>Technical analysis course gave me the confidence to read charts and trade smarter.</p>
+              <p>The technical analysis course taught me how to read charts clearly.</p>
               <div class="client-info">
                 <div class="client-details">
                   <h3>Rahul Desai</h3>
-                  <span class="position">Technical Analyst</span>
+                  <span class="position">Technical Analysis Learner</span>
                 </div>
               </div>
             </div>
@@ -871,11 +823,11 @@
               <div class="quote-pattern">
                 <i class="bi bi-quote"></i>
               </div>
-              <p>Risk management course taught me how to protect my investments. A game-changer!</p>
+              <p>The risk management course helped me understand key trading principles.</p>
               <div class="client-info">
                 <div class="client-details">
                   <h3>Neha Gupta</h3>
-                  <span class="position">Risk-Conscious Trader</span>
+                  <span class="position">Risk-Conscious Learner</span>
                 </div>
               </div>
             </div>
@@ -886,12 +838,11 @@
               <div class="quote-pattern">
                 <i class="bi bi-quote"></i>
               </div>
-              <p>The live Q&A sessions helped me clarify doubts and stay motivated.</p>
+              <p>The live Q&A sessions were great for clarifying my doubts about trading concepts.</p>
               <div class="client-info">
-
                 <div class="client-details">
                   <h3>Amit Kumar</h3>
-                  <span class="position">Active Trader</span>
+                  <span class="position">Active Learner</span>
                 </div>
               </div>
             </div>
@@ -910,9 +861,9 @@
 
         <div class="row">
           <div class="col-lg-8 mx-auto text-center mb-5" data-aos="fade-up" data-aos-delay="200">
-            <h3 class="main-headline">Helping Traders Succeed</h3>
-            <p class="main-description">I’m dedicated to helping you achieve your trading goals with practical, hands-on
-              guidance.</p>
+            <h3 class="main-headline">Educating Traders</h3>
+            <p class="main-description">We’re dedicated to helping you learn stock market concepts with clear,
+              educational content.</p>
 
             <div class="achievement-badge" data-aos="zoom-in" data-aos-delay="300">
               <div class="achievement-content">
@@ -920,8 +871,8 @@
                   <i class="bi bi-trophy-fill"></i>
                 </div>
                 <div class="achievement-details">
-                  <div class="achievement-title">Trusted Mentor</div>
-                  <div class="achievement-subtitle">Loved by 20+ students</div>
+                  <div class="achievement-title">Educational Platform</div>
+                  <div class="achievement-subtitle">Trusted by learners</div>
                 </div>
               </div>
             </div>
@@ -937,13 +888,13 @@
                 </div>
                 <div class="stat-content">
                   <div class="stat-number">
-                    <span data-purecounter-start="0" data-purecounter-end="20" data-purecounter-duration="2"
+                    <span data-purecounter-start="0" data-purecounter-end="50" data-purecounter-duration="2"
                       class="purecounter"></span>+
                   </div>
-                  <div class="stat-label">Students Trained</div>
+                  <div class="stat-label">Students Enrolled</div>
                   <div class="stat-growth">
                     <i class="bi bi-arrow-up"></i>
-                    <span>+50% this year</span>
+                    <span>Growing community</span>
                   </div>
                 </div>
               </div>
@@ -959,10 +910,10 @@
                     <span data-purecounter-start="0" data-purecounter-end="90" data-purecounter-duration="2"
                       class="purecounter"></span>%
                   </div>
-                  <div class="stat-label">Satisfaction Rate</div>
+                  <div class="stat-label">Course Completion Rate</div>
                   <div class="stat-growth">
                     <i class="bi bi-arrow-up"></i>
-                    <span>+10% this year</span>
+                    <span>High engagement</span>
                   </div>
                 </div>
               </div>
@@ -975,13 +926,13 @@
                 </div>
                 <div class="stat-content">
                   <div class="stat-number">
-                    <span data-purecounter-start="0" data-purecounter-end="2" data-purecounter-duration="2"
+                    <span data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="2"
                       class="purecounter"></span>
                   </div>
-                  <div class="stat-label">Years Experience</div>
+                  <div class="stat-label">Teaching Experience</div>
                   <div class="stat-growth">
                     <i class="bi bi-arrow-up"></i>
-                    <span>Proven expertise</span>
+                    <span>Educational expertise</span>
                   </div>
                 </div>
               </div>
@@ -1000,7 +951,7 @@
                   <div class="stat-label">Countries Reached</div>
                   <div class="stat-growth">
                     <i class="bi bi-arrow-up"></i>
-                    <span>+5 new regions</span>
+                    <span>Global learners</span>
                   </div>
                 </div>
               </div>
@@ -1017,9 +968,9 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <span class="description-title">My Services</span>
-        <h2>Services</h2>
-        <p>Explore the ways I can help you succeed in trading with personalized guidance.</p>
+        <span class="description-title">Our Services</span>
+        <h2>Educational Services</h2>
+        <p>Explore our educational offerings to learn stock market concepts and trading principles.</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -1029,11 +980,11 @@
             <div class="intro-content" data-aos="fade-right" data-aos-delay="100">
               <div class="section-badge mb-3" data-aos="zoom-in" data-aos-delay="50">
                 <i class="bi bi-star-fill"></i>
-                <span>WHAT I OFFER</span>
+                <span>WHAT WE OFFER</span>
               </div>
-              <h2 class="section-heading mb-4">Your Personal Trading Mentor</h2>
-              <p class="section-description mb-4">I’m dedicated to helping you learn trading through simple courses and
-                one-on-one support tailored to your needs.</p>
+              <h2 class="section-heading mb-4">Your Learning Partner</h2>
+              <p class="section-description mb-4">We provide educational courses and resources to help you understand
+                trading concepts in a clear, structured way.</p>
               <a href="#courses" class="cta-button" data-aos="fade-right" data-aos-delay="200">
                 Explore Courses
               </a>
@@ -1041,8 +992,7 @@
           </div>
           <div class="col-lg-6">
             <div class="hero-visual" data-aos="fade-left" data-aos-delay="150">
-              <img src="assets/img/services/services-1.webp" alt="Trading Vidhyalay services overview"
-                class="img-fluid">
+              <img src="assets/img/services/services-1.webp" alt="Stock market education overview" class="img-fluid">
             </div>
           </div>
         </div>
@@ -1058,7 +1008,7 @@
                   <h5 class="service-title">
                     <a href="#">Online Trading Courses</a>
                   </h5>
-                  <p class="service-description">Learn trading at your own pace with my easy-to-follow online courses.
+                  <p class="service-description">Learn trading concepts at your own pace with our educational courses.
                   </p>
                 </div>
               </div>
@@ -1071,9 +1021,9 @@
                 </div>
                 <div class="card-content">
                   <h5 class="service-title">
-                    <a href="#">Personal Mentorship</a>
+                    <a href="#">Educational Mentorship</a>
                   </h5>
-                  <p class="service-description">Get one-on-one guidance from me to develop your trading skills.</p>
+                  <p class="service-description">Get guidance to understand trading principles effectively.</p>
                 </div>
               </div>
             </div><!-- End Service Card -->
@@ -1085,9 +1035,9 @@
                 </div>
                 <div class="card-content">
                   <h5 class="service-title">
-                    <a href="#">Live Q&A Sessions</a>
+                    <a href="#">Educational Webinars</a>
                   </h5>
-                  <p class="service-description">Join me live to discuss markets and get your questions answered.</p>
+                  <p class="service-description">Join live sessions to learn about markets and ask questions.</p>
                 </div>
               </div>
             </div><!-- End Service Card -->
@@ -1099,9 +1049,9 @@
                 </div>
                 <div class="card-content">
                   <h5 class="service-title">
-                    <a href="#">Free Trading Tips</a>
+                    <a href="#">Free Educational Guides</a>
                   </h5>
-                  <p class="service-description">Access free guides and tips to kickstart your trading journey.</p>
+                  <p class="service-description">Access free resources to learn trading concepts.</p>
                 </div>
               </div>
             </div><!-- End Service Card -->
@@ -1113,9 +1063,9 @@
                 </div>
                 <div class="card-content">
                   <h5 class="service-title">
-                    <a href="#">Market Updates</a>
+                    <a href="#">Educational Updates</a>
                   </h5>
-                  <p class="service-description">Stay informed with my regular market updates and insights.</p>
+                  <p class="service-description">Stay informed with educational content on market concepts.</p>
                 </div>
               </div>
             </div><!-- End Service Card -->
@@ -1127,9 +1077,9 @@
                 </div>
                 <div class="card-content">
                   <h5 class="service-title">
-                    <a href="#">Trading Strategies</a>
+                    <a href="#">Trading Concepts</a>
                   </h5>
-                  <p class="service-description">Learn my proven strategies to trade smarter and safer.</p>
+                  <p class="service-description">Learn general strategies to understand trading better.</p>
                 </div>
               </div>
             </div><!-- End Service Card -->
@@ -1148,7 +1098,7 @@
       <div class="container section-title" data-aos="fade-up">
         <span class="description-title">Pricing</span>
         <h2>Course Pricing</h2>
-        <p>Choose a plan that fits your goals and start learning with me today.</p>
+        <p>Choose a plan to start learning stock market concepts with our educational courses.</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -1162,7 +1112,7 @@
             </label>
             <span class="yearly">Yearly</span>
           </div>
-          <p class="hint mt-3 mb-0 small">Save more with yearly plans and get extra resources.</p>
+          <p class="hint mt-3 mb-0 small">Yearly plans offer extended access to educational resources.</p>
         </div>
 
         <div class="row gy-4">
@@ -1172,7 +1122,7 @@
               <div class="card-head">
                 <span class="badge-title">Starter</span>
                 <h3 class="title">Beginner Plan</h3>
-                <p class="subtitle">Perfect for new traders starting their journey.</p>
+                <p class="subtitle">Ideal for those new to stock market education.</p>
                 <div class="price-wrap">
                   <span class="price price-monthly"><sup>₹</sup>499<span class="period">/mo</span></span>
                   <span class="price price-yearly"><sup>₹</sup>4999<span class="period">/yr</span></span>
@@ -1182,8 +1132,8 @@
               <ul class="feature-list list-unstyled mb-4">
                 <li><i class="bi bi-check-circle"></i> Beginner Trading Course</li>
                 <li><i class="bi bi-check-circle"></i> Weekly Q&A Sessions</li>
-                <li><i class="bi bi-check-circle"></i> Free Trading Tips</li>
-                <li class="muted"><i class="bi bi-dash-circle"></i> Personal Mentorship</li>
+                <li><i class="bi bi-check-circle"></i> Free Educational Guides</li>
+                <li class="muted"><i class="bi bi-dash-circle"></i> Educational Mentorship</li>
                 <li class="muted"><i class="bi bi-dash-circle"></i> Advanced Courses</li>
               </ul>
 
@@ -1200,7 +1150,7 @@
               <div class="card-head">
                 <span class="badge-title">Pro</span>
                 <h3 class="title">Advanced Plan</h3>
-                <p class="subtitle">Ideal for traders seeking advanced skills and support.</p>
+                <p class="subtitle">For learners seeking comprehensive trading education.</p>
                 <div class="price-wrap">
                   <span class="price price-monthly"><sup>₹</sup>999<span class="period">/mo</span></span>
                   <span class="price price-yearly"><sup>₹</sup>9999<span class="period">/yr</span></span>
@@ -1210,9 +1160,9 @@
               <ul class="feature-list list-unstyled mb-4">
                 <li><i class="bi bi-check-circle"></i> All Courses Access</li>
                 <li><i class="bi bi-check-circle"></i> Weekly Q&A Sessions</li>
-                <li><i class="bi bi-check-circle"></i> Free Trading Tips</li>
-                <li><i class="bi bi-check-circle"></i> Personal Mentorship</li>
-                <li><i class="bi bi-check-circle"></i> Market Updates</li>
+                <li><i class="bi bi-check-circle"></i> Free Educational Guides</li>
+                <li><i class="bi bi-check-circle"></i> Educational Mentorship</li>
+                <li><i class="bi bi-check-circle"></i> Educational Updates</li>
               </ul>
 
               <div class="cta">
@@ -1226,7 +1176,7 @@
               <div class="card-head">
                 <span class="badge-title">Elite</span>
                 <h3 class="title">Master Plan</h3>
-                <p class="subtitle">Comprehensive plan with premium support and resources.</p>
+                <p class="subtitle">Comprehensive education with premium resources.</p>
                 <div class="price-wrap">
                   <span class="price price-monthly"><sup>₹</sup>1499<span class="period">/mo</span></span>
                   <span class="price price-yearly"><sup>₹</sup>14999<span class="period">/yr</span></span>
@@ -1236,9 +1186,9 @@
               <ul class="feature-list list-unstyled mb-4">
                 <li><i class="bi bi-check-circle"></i> All Courses Access</li>
                 <li><i class="bi bi-check-circle"></i> Weekly Q&A Sessions</li>
-                <li><i class="bi bi-check-circle"></i> Free Trading Tips</li>
-                <li><i class="bi bi-check-circle"></i> Personal Mentorship</li>
-                <li><i class="bi bi-check-circle"></i> Exclusive Market Insights</li>
+                <li><i class="bi bi-check-circle"></i> Free Educational Guides</li>
+                <li><i class="bi bi-check-circle"></i> Educational Mentorship</li>
+                <li><i class="bi bi-check-circle"></i> Exclusive Educational Content</li>
               </ul>
 
               <div class="cta">
@@ -1253,14 +1203,116 @@
 
     </section><!-- /Pricing Section -->
 
+    <!-- Faq Section -->
+    <section id="faq" class="faq section">
+
+      <div class="container">
+
+        <div class="row justify-content-center">
+
+          <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="faq-container">
+
+              <div class="faq-item faq-active">
+                <h3>Is this course SEBI registered?</h3>
+                <div class="faq-content">
+                  <p>No, Trading Vidhyalay is not SEBI-registered. We provide educational content only and are not
+                    investment advisors or research analysts. Our courses are designed to teach stock market concepts,
+                    not to offer investment advice.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>Do you provide stock tips or trading calls?</h3>
+                <div class="faq-content">
+                  <p>No, we do not provide stock tips, trading calls, or any buy/sell/hold recommendations. Our focus is
+                    on teaching general trading principles and market concepts for educational purposes.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>Who should take this course?</h3>
+                <div class="faq-content">
+                  <p>Our courses are designed for beginners and intermediate learners who want to understand stock
+                    market concepts, trading principles, and risk management techniques. They are ideal for anyone
+                    seeking to build foundational knowledge of trading.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>Can I expect profits after this course?</h3>
+                <div class="faq-content">
+                  <p>Our courses are educational and aim to teach trading concepts. We do not guarantee profits or
+                    financial success, as trading involves risks and outcomes depend on individual decisions. Always
+                    consult a SEBI-registered advisor for investment decisions.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>What is the difference between education and investment advice?</h3>
+                <div class="faq-content">
+                  <p>Education involves teaching general concepts, principles, and strategies about the stock market,
+                    which we provide. Investment advice involves recommending specific stocks or actions, which we do
+                    not offer. For personalized advice, consult a SEBI-registered advisor.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>Do I need prior trading knowledge to join?</h3>
+                <div class="faq-content">
+                  <p>No prior trading knowledge is required. Our courses are designed for beginners and include
+                    foundational lessons to help you understand stock market concepts from scratch.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>How do I practice what I learn?</h3>
+                <div class="faq-content">
+                  <p>We recommend practicing concepts using paper trading or demo accounts offered by SEBI-registered
+                    brokers. These allow you to simulate trading without financial risk, helping you apply what you’ve
+                    learned.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>What is your refund policy?</h3>
+                <div class="faq-content">
+                  <p>Please note that all course purchases are final and non-refundable. Since our courses provide
+                    immediate access to digital educational content, we do not offer refunds once a purchase is
+                    completed.
+                    We recommend reviewing the course details carefully before enrolling. For any questions prior to
+                    purchase, feel free to contact us at tradingvidhyalayinfo@gmail.com
+                    .</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+            </div>
+
+          </div><!-- End Faq Column-->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Faq Section -->
+
     <!-- Contact Section -->
     <section id="contact" class="contact section light-background">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <span class="description-title">Contact</span>
-        <h2>Contact Me</h2>
-        <p>Reach out for course details, trading questions, or personalized guidance.</p>
+        <h2>Contact Us</h2>
+        <p>Reach out for inquiries about our educational courses or resources.</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -1269,8 +1321,8 @@
           <div class="col-lg-6">
             <div class="content" data-aos="fade-up" data-aos-delay="200">
               <div class="section-category mb-3">Get in Touch</div>
-              <h2 class="display-5 mb-4">I’m Here to Help You Trade</h2>
-              <p class="lead mb-4">Have questions about trading or my courses? Contact me directly for support.</p>
+              <h2 class="display-5 mb-4">Support for Your Learning Journey</h2>
+              <p class="lead mb-4">Have questions about our courses or resources? Contact us for assistance.</p>
 
               <div class="contact-info mt-5">
                 <div class="info-item d-flex mb-3" data-aos="fade-up" data-aos-delay="300">
@@ -1287,16 +1339,10 @@
                   </a>
                 </div>
 
-
                 <div class="info-item d-flex mb-4" data-aos="fade-up" data-aos-delay="500">
                   <i class="bi bi-geo-alt me-3"></i>
-                  <span>Ahmedabad,Gujarat, India</span>
+                  <span>Ahmedabad, Gujarat, India</span>
                 </div>
-
-                <!-- <a href="#" class="map-link d-inline-flex align-items-center" data-aos="fade-up" data-aos-delay="600">
-                  Open Map
-                  <i class="bi bi-arrow-right ms-2"></i>
-                </a> -->
               </div>
             </div>
           </div>
@@ -1357,8 +1403,10 @@
           <a href="index.html" class="logo d-flex align-items-center">
             <img src="assets/img/logo.png" alt="Trading Vidhyalay Logo">
           </a>
-          <p>I’m the founder of Trading Vidhyalay, passionate about teaching trading with simple, practical strategies
-            to help you succeed.</p>
+          <p>Trading Vidhyalay is committed to providing educational content on stock market concepts to help learners
+            understand trading principles.</p>
+          <p class="disclaimer small">Disclaimer: We are not SEBI-registered and do not provide investment advice or
+            stock recommendations. Consult a qualified financial advisor for investment decisions.</p>
           <div class="social-links d-flex mt-4">
             <a href="https://www.youtube.com/@tradingvidhyalayyt" target="_blank">
               <i class="bi bi-youtube"></i>
@@ -1391,7 +1439,7 @@
         </div>
 
         <div class="col-lg-2 col-6 footer-links">
-          <h4>My Courses</h4>
+          <h4>Our Courses</h4>
           <ul>
             <li><a href="#">Beginner Trading</a></li>
             <li><a href="#">Options Trading</a></li>
@@ -1401,18 +1449,18 @@
         </div>
 
         <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-          <h4>Contact Me</h4>
+          <h4>Contact Us</h4>
           <p>Ahmedabad</p>
           <p>Gujarat</p>
           <p>India</p>
           <p class="mt-4">
-            <strong>Phone:</strong>
-            <a href="tel:+917486068173">+91 74860 68173</a>
+            <strong>Phone :</strong>
+            <a style="color: white;" href="tel:+917486068173">+91 74860 68173</a>
           </p>
 
           <p>
-            <strong>Email:</strong>
-            <a href="mailto:tradingvidhyalayinfo@gmail.com">tradingvidhyalayinfo@gmail.com</a>
+            <strong>Email :</strong>
+            <a style="color: white;" href="mailto:tradingvidhyalayinfo@gmail.com">tradingvidhyalayinfo@gmail.com</a>
           </p>
 
         </div>
@@ -1423,6 +1471,8 @@
     <div class="container copyright text-center mt-4">
       <p>© <span>Copyright</span> <strong class="px-1 sitename">Trading Vidhyalay</strong> <span>All Rights
           Reserved</span></p>
+      <p class="disclaimer small">Trading Vidhyalay is an educational platform and not a SEBI-registered entity. We do
+        not offer investment advice or stock recommendations.</p>
       <div class="credits"></div>
     </div>
 
