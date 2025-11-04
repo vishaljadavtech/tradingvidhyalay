@@ -1,47 +1,52 @@
 :root {
   /* Fonts */
-  --default-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  --heading-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  --nav-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --default-font: "Inter", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --heading-font: "Poppins", "Segoe UI", sans-serif;
+  --nav-font: var(--default-font);
 
-  /* Global Colors for Black & White Theme */
-  --background-color: #ffffff;
-  /* Main background */
-  --default-color: #000000;
-  /* Default text color */
-  --heading-color: #000000;
-  /* Heading text color */
-  --accent-color: #000000;
-  /* Accent color (for links, buttons) */
-  --surface-color: #ffffff;
-  /* Card / container backgrounds */
-  --contrast-color: #ffffff;
-  /* Text on dark backgrounds */
-}
+  /* Brand Core Colors */
+  --brand-primary: #ff247f;
+  /* Vibrant Pink */
+  --brand-dark: #2b002b;
+  /* Deep Plum/Burgundy */
+  --brand-black: #0b0014;
+  /* Almost black background */
+  --brand-light: #f8f8ff;
+  /* Soft off-white for contrast */
+  --brand-gradient: linear-gradient(135deg, #ff247f 0%, #a00060 100%);
 
-/* Dark mode alternative (optional) */
-.dark-background {
-  --background-color: #000000;
-  --default-color: #ffffff;
+  /* Layout Colors */
+  --background-color: var(--brand-black);
+  --surface-color: #1a001e;
+  /* Slightly lighter containers */
+  --card-color: #220027;
+  /* Card/section background */
+  --border-color: rgba(255, 255, 255, 0.08);
+
+  /* Text Colors */
+  --default-color: var(--brand-light);
   --heading-color: #ffffff;
-  --surface-color: #1c1c1c;
-  /* Slightly lighter black for containers */
+  --muted-color: #b7a9c1;
   --contrast-color: #ffffff;
+
+  /* Accent & Action */
+  --accent-color: var(--brand-primary);
+  --accent-hover: #ff4fa1;
+  --accent-glow: 0 0 12px rgba(255, 36, 127, 0.6);
 }
 
-/* Nav Menu Colors */
+/* Navigation */
 :root {
-  --nav-color: #000000;
-  --nav-hover-color: #555555;
-  /* Slight gray on hover for subtle effect */
-  --nav-mobile-background-color: #ffffff;
-  --nav-dropdown-background-color: #ffffff;
-  --nav-dropdown-color: #000000;
-  --nav-dropdown-hover-color: #555555;
+  --nav-color: var(--brand-light);
+  --nav-hover-color: var(--brand-primary);
+  --nav-background-color: transparent;
+  --nav-mobile-background-color: #1a001e;
+  --nav-dropdown-background-color: #1a001e;
+  --nav-dropdown-color: var(--brand-light);
+  --nav-dropdown-hover-color: var(--brand-primary);
 }
 
-
-/* Smooth scroll */
+/* Smooth Scroll */
 :root {
   scroll-behavior: smooth;
 }
@@ -202,13 +207,13 @@ h6 {
 /* Global Header on Scroll
 ------------------------------*/
 .scrolled .header {
-  --background-color: #ffffff;
+  --background-color: black;
 }
 
 /* Index Page Header on Scroll
 ------------------------------*/
 .index-page.scrolled .header {
-  --background-color: #ffffff;
+  --background-color: black;
 }
 
 /*--------------------------------------------------------------
@@ -3252,7 +3257,7 @@ section,
 
 .contact .contact-form .form-control::placeholder,
 .contact .contact-form .form-select::placeholder {
-  color: color-mix(in srgb, var(--default-color), transparent 50%);
+  color: color-mix(in srgb, black, transparent 50%);
 }
 
 .contact .contact-form .btn-submit {
@@ -3932,7 +3937,7 @@ section,
 
 /* Step Cards */
 .step-card {
-  background: #fff;
+  background: var(--brand-primary);
   border-radius: 16px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   padding: 30px 20px;
@@ -3953,9 +3958,9 @@ section,
   top: -14px;
   left: 50%;
   transform: translateX(-50%);
-  background: #facc15;
+  background: var(--brand-dark);
   /* yellow */
-  color: #000;
+  color: white;
   font-weight: 600;
   font-size: 14px;
   padding: 4px 16px;
@@ -3979,7 +3984,7 @@ section,
 
 .step-card p {
   font-size: 14px;
-  color: #555;
+  color: white;
 }
 
 .hero-section h1 {
@@ -4005,7 +4010,7 @@ section,
 
 
 .idea-box {
-  background: #2196f3;
+  background: var(--brand-dark);
   color: #fff;
   padding: 20px;
   border-radius: 10px;
@@ -4062,12 +4067,14 @@ section,
   }
 
   /* First child = text, Second child = image */
-  .idea-box > div:first-child {
-    order: 2;  /* move text below */
+  .idea-box>div:first-child {
+    order: 2;
+    /* move text below */
   }
 
-  .idea-box > div:last-child {
-    order: 1;  /* move image above */
+  .idea-box>div:last-child {
+    order: 1;
+    /* move image above */
   }
 
   .idea-box img {
@@ -4097,12 +4104,12 @@ section,
   .idea-box p {
     font-size: 1rem;
   }
+
   .whatsapp-float {
     width: 60px;
     height: 60px;
     font-size: 45px;
 
-   
+
   }
 }
-
