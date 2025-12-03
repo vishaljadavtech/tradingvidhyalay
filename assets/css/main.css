@@ -2735,13 +2735,16 @@ section,
   }
 
   .banner-title {
-    font-size: 2.8rem !important;
-    line-height: 1.2;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    line-height: 1;
+    margin: 0 0 30px 0;
   }
-
-  .banner-title .highlight::after {
-    height: 5px;
-    bottom: -6px;
+  
+  .banner-title .highlight {
+    position: relative;
+    display: inline-block;
   }
 
   .banner-tag {
@@ -2791,12 +2794,18 @@ section,
   }
 
   .banner-title {
-    font-size: 2.4rem !important;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    line-height: 1;
+    margin: 0 0 30px 0;
   }
-
-  .banner-title .highlight::after {
-    height: 4px;
+  
+  .banner-title .highlight {
+    position: relative;
+    display: inline-block;
   }
+  
 
   .footer-note {
     position: relative;
