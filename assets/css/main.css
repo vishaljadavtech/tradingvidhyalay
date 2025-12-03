@@ -993,14 +993,14 @@ section,
 }
 
 @media (max-width: 768px) {
-  
+
   .mentor-header h1 {
     font-size: 2.5rem;
   }
 }
 
 @media (max-width: 768px) {
-  
+
   .mentor-header h1 {
     font-size: 2.5rem;
   }
@@ -1073,12 +1073,12 @@ section,
 
 
 @media (max-width: 480px) {
-  
-.mentor-image-wrapper {
-  position: relative;
-  height: 100%;
-  min-height: 430px;
-  overflow: hidden;
+
+  .mentor-image-wrapper {
+    position: relative;
+    height: 100%;
+    min-height: 430px;
+    overflow: hidden;
 
   }
 }
@@ -2741,7 +2741,7 @@ section,
     line-height: 1;
     margin: 0 0 30px 0;
   }
-  
+
   .banner-title .highlight {
     position: relative;
     display: inline-block;
@@ -2789,6 +2789,7 @@ section,
     width: 160vw;
     height: 160vw;
   }
+
   .banner-content {
     margin-left: 100px;
   }
@@ -2800,12 +2801,28 @@ section,
     line-height: 1;
     margin: 0 0 30px 0;
   }
-  
+
   .banner-title .highlight {
     position: relative;
     display: inline-block;
   }
-  
+
+  .learn-card-icon {
+    font-size: 2.2rem;
+    text-align: center;
+    color: #8aaabb;
+    margin-bottom: 1.5rem;
+  }
+
+  .learn-card h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-align: center;
+    color: white;
+    margin-bottom: 0.8rem;
+  }
+
+
 
   .footer-note {
     position: relative;
@@ -3030,5 +3047,19 @@ section,
 
   .edge-card {
     padding: 30px 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card-icon {
+    margin-left: 150px;
+  }
+
+  .edge-card h3 {
+    text-align: center;
+  }
+
+  .edge-card1 h3 {
+    text-align: center;
   }
 }
