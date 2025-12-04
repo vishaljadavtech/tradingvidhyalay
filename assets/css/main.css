@@ -2345,7 +2345,6 @@ section,
   overflow: visible;
 }
 
-/* Desktop image */
 .idea-box img {
   width: 200px;
   height: auto;
@@ -2363,7 +2362,6 @@ section,
   color: white;
 }
 
-/* Floating WhatsApp Button */
 .whatsapp-float {
   position: fixed;
   bottom: 20px;
@@ -2382,22 +2380,18 @@ section,
   transition: transform 0.2s ease-in-out;
 }
 
-/* ✅ Mobile fix */
 @media (max-width: 768px) {
   .idea-box {
     flex-direction: column;
     text-align: center;
   }
 
-  /* First child = text, Second child = image */
   .idea-box>div:first-child {
     order: 2;
-    /* move text below */
   }
 
   .idea-box>div:last-child {
     order: 1;
-    /* move image above */
   }
 
   .idea-box img {
@@ -2518,7 +2512,7 @@ section,
   position: relative;
   width: 1600px;
   margin: 0 auto;
-  min-height: 60vh;
+  min-height: 50vh;
   margin-top: 100px;
   background: linear-gradient(135deg, #131b1e 0%, #12191f 100%);
   display: flex;
@@ -2530,10 +2524,8 @@ section,
   border-radius: 20px;
   color: #e0e0e0;
   box-sizing: border-box;
-  /* include padding in width */
 }
 
-/* Globe background (same as your screenshot) */
 .trader-banner::before {
   content: '';
   position: absolute;
@@ -2697,9 +2689,6 @@ section,
   margin-bottom: 20px;
 }
 
-/* ==================================================================
-   MOBILE & TABLET ONLY FIXES – Desktop remains 100% untouched
-   ================================================================== */
 
 @media (max-width: 1024px) {
 
@@ -2752,7 +2741,6 @@ section,
     padding: 8px 20px;
   }
 
-  /* Stack buttons vertically + bigger tap targets */
   .banner-cta {
     flex-direction: column;
     align-items: center;
@@ -2766,7 +2754,6 @@ section,
     padding: 18px 32px;
     font-size: 1.1rem;
     min-height: 56px;
-    /* perfect for fingers */
     justify-content: center;
   }
 }
